@@ -1,0 +1,32 @@
+* C:\Users\SOHAM\Desktop\DigTri\DigTri.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 21-Apr-21 12:25:25 PM
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  Net-_U1-Pad1_ GND pulse		
+R1  Net-_R1-Pad1_ OUT 1k		
+R2  Net-_R2-Pad1_ OUT 1k		
+R3  Net-_R3-Pad1_ OUT 1k		
+R4  Net-_R4-Pad1_ OUT 1k		
+R5  Net-_R5-Pad1_ OUT 1k		
+U6  Net-_U5-Pad5_ CLK Net-_U11-Pad2_ Net-_U10-Pad2_ Net-_U6-Pad5_ ? d_dff		
+U5  Net-_U4-Pad5_ CLK Net-_U11-Pad2_ Net-_U10-Pad2_ Net-_U5-Pad5_ ? d_dff		
+U4  Net-_U3-Pad5_ CLK Net-_U11-Pad2_ Net-_U10-Pad2_ Net-_U4-Pad5_ ? d_dff		
+U3  Net-_U2-Pad5_ CLK Net-_U11-Pad2_ Net-_U10-Pad2_ Net-_U3-Pad5_ ? d_dff		
+U2  Net-_U2-Pad1_ CLK Net-_U11-Pad2_ Net-_U10-Pad2_ Net-_U2-Pad5_ ? d_dff		
+v2  DC_IN GND DC		
+U1  Net-_U1-Pad1_ CLK adc_bridge_1		
+U12  OUT plot_v1		
+U7  Net-_U6-Pad5_ CLK Net-_U11-Pad2_ Net-_U10-Pad2_ Net-_U7-Pad5_ Net-_U2-Pad1_ d_dff		
+U9  CLK plot_v1		
+U13  DC_IN plot_v1		
+U10  GND Net-_U10-Pad2_ adc_bridge_1		
+U11  DC_IN Net-_U11-Pad2_ adc_bridge_1		
+U8  Net-_U2-Pad5_ Net-_U3-Pad5_ Net-_U4-Pad5_ Net-_U5-Pad5_ Net-_U6-Pad5_ Net-_U7-Pad5_ Net-_R1-Pad1_ Net-_R4-Pad1_ Net-_R3-Pad1_ Net-_R2-Pad1_ Net-_R5-Pad1_ Net-_R6-Pad2_ dac_bridge_6		
+R6  OUT Net-_R6-Pad2_ 1k		
+C1  OUT GND 150uf		
+
+.end

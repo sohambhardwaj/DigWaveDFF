@@ -1,0 +1,33 @@
+* C:\Users\SOHAM\Desktop\DigStairDown\DigStairDown.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 21-Apr-21 2:02:32 AM
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U4  Net-_U4-Pad1_ Net-_U2-Pad2_ Net-_U1-Pad2_ Net-_U3-Pad2_ Net-_U4-Pad5_ Net-_U4-Pad1_ d_dff		
+U5  Net-_U5-Pad1_ Net-_U4-Pad5_ Net-_U1-Pad2_ Net-_U3-Pad2_ Net-_U5-Pad5_ Net-_U5-Pad1_ d_dff		
+U6  Net-_U6-Pad1_ Net-_U5-Pad5_ Net-_U1-Pad2_ Net-_U3-Pad2_ Net-_U6-Pad5_ Net-_U6-Pad1_ d_dff		
+U7  Net-_U7-Pad1_ Net-_U6-Pad5_ Net-_U1-Pad2_ Net-_U3-Pad2_ Net-_U7-Pad5_ Net-_U7-Pad1_ d_dff		
+v2  ? GND pulse		
+U2  ? Net-_U2-Pad2_ adc_bridge_1		
+R8  OUT Net-_R8-Pad2_ 20k		
+R6  O3 Net-_R6-Pad2_ 20k		
+R4  O2 Net-_R4-Pad2_ 20k		
+R2  O1 Net-_R2-Pad2_ 20k		
+R1  GND O1 20k		
+U8  Net-_U4-Pad5_ Net-_U5-Pad5_ Net-_U6-Pad5_ Net-_U7-Pad5_ Net-_R2-Pad2_ Net-_R4-Pad2_ Net-_R6-Pad2_ Net-_R8-Pad2_ dac_bridge_4		
+R3  O1 O2 10k		
+R5  O2 O3 10k		
+R7  O3 OUT 10k		
+U9  OUT plot_v1		
+v1  Net-_U1-Pad1_ GND DC		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ adc_bridge_1		
+U3  GND Net-_U3-Pad2_ adc_bridge_1		
+U10  O1 plot_v1		
+U11  O2 plot_v1		
+U12  O3 plot_v1		
+C1  OUT GND 1nf		
+
+.end
